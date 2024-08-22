@@ -41,11 +41,11 @@ sort_by = st.sidebar.selectbox('Sort By', options=['fare', 'duration', 'ratings'
 
 # Bus ID filter
 
-bus_ids = df['Bus_Id'].unique()
+bus_ids = df['Bus_Mode'].unique()
 selected_bus_ids = []
 for bus_id in bus_ids:
     if st.sidebar.checkbox(f'Bus ID: {bus_id}'):
-        selected_bus_ids.append(bus_id)
+        selected_bus_ids.append(Bus_Mode)
 
 # Apply filters
 df = df.copy()
@@ -57,7 +57,7 @@ if end_filter:
     df = df[df['End'].isin(end_filter)]
 
 if selected_bus_ids:
-    df = df[df['Bus_Id'].isin(selected_bus_ids)]
+    df = df[df['Bus_Mode'].isin(selected_bus_ids)]
 
 if seat_type_filter:
     df = df[df['Seat_Type'].isin(seat_type_filter)]
