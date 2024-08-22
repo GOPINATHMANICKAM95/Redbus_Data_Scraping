@@ -3,3 +3,5 @@ sqlalchemy
 streamlit
 numpy
 mysql-connector-python
+selenium
+TIME-python
