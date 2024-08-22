@@ -3,7 +3,6 @@ import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
 
-
 engine = sqlalchemy.create_engine("mysql+mysqlconnector://admin:gopi1234@gopids.c5ic8ayqm05z.ap-south-1.rds.amazonaws.com:3306/gopids")
 query = "SELECT * FROM redbus_web1"
 df = pd.read_sql(query, engine.connect())
@@ -42,8 +41,8 @@ sort_by = st.sidebar.selectbox('Sort By', options=['fare', 'duration', 'ratings'
 bus_ids = df['Bus_Mode'].unique()
 selected_bus_ids = []
 for bus_id in bus_ids:
-    if st.sidebar.checkbox(f'Bus ID: {bus_id}'):
-        selected_bus_ids.append(Bus_Mode)
+    if st.sidebar.checkbox(f'Transport_Mode: {bus_id}'):
+        selected_bus_ids.append(bus_id)
 
 # Apply filters
 df = df.copy()
@@ -79,6 +78,3 @@ st.title("Bus Schedule and Fare Information")
 
 # Display the data
 st.dataframe(df[['route_Name','busname', 'starttime', 'endtime', 'duration', 'fare', 'seats','ratings']],use_container_width=True)
-
-
-
