@@ -2,3 +2,4 @@ pandas
 sqlalchemy
 streamlit
 numpy
+mysql-connector-python
