@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import sqlalchemy
 from sqlalchemy import create_engine
-import plotly.express as px
-import plotly.graph_objects as go
 
 
 engine = sqlalchemy.create_engine("mysql+mysqlconnector://admin:gopi1234@gopids.c5ic8ayqm05z.ap-south-1.rds.amazonaws.com:3306/gopids")
