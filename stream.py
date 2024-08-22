@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 
 engine = sqlalchemy.create_engine("mysql+mysqlconnector://admin:gopi1234@gopids.c5ic8ayqm05z.ap-south-1.rds.amazonaws.com:3306/gopids")
-query = "SELECT * FROM redbus_web"
+query = "SELECT * FROM redbus_web1"
 df = pd.read_sql(query, engine.connect())
 
 #set wise node is always on
