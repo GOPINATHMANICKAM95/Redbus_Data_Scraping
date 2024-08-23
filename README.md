@@ -1,6 +1,6 @@
 # Redbus_Data_Scraping
 
-Redbus Data Scraping and SQL Integration and Streaming on web through Streamlit API
+Redbus Data Scraping and Storing in SQL and Streaming on Web through Streamlit API
 
 ## Project Description
 
