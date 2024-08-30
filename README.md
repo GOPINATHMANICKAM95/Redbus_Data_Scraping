@@ -62,4 +62,6 @@ This project involves scraping bus route details and associated data from a webs
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/GOPINATHMANICKAM95/your-repo-name.git
+   git clone https://github.com/GOPINATHMANICKAM95/Redbus_Data_Scraping.git
+2. Install the Requirments
+3. Run the Streamlit App
