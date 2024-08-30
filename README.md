@@ -1,4 +1,4 @@
-# Web Scraping and Data Visualization Pipeline
+# Web Scraping and Data Visualization Pipeline in Red Bus for 10 State Bus Routes
 
 This project involves scraping bus route details and associated data from a website, cleaning and processing the data using Python and Pandas, and storing it in an AWS RDS instance. The data is then retrieved and visualized in a Streamlit app with advanced filtering and graphing capabilities.
 
